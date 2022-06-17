@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid black;
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.486);
+}
+
+.fale-conosco{
+    text-align: center;
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
