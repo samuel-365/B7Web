@@ -1124,6 +1124,14 @@ footer .icon img{
 
 @media(min-width:450px) and (max-width:590px){
 
+
+    .section-about-us-right{
+        width: auto;
+    }
+    .section-about-us-right img{
+        max-width: 90%;
+    }
+
     .section-projects-filters{
         display: flex;
         flex-wrap: wrap;
@@ -1137,9 +1145,269 @@ footer .icon img{
     .section-projects li{
         margin: auto;
     }
+    
+
 
     .section-team{
         max-width: 290px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:450px){
+
+    .logo{
+        margin-left: 30px;
+    }
+
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li a{
+        font-weight: bold;
+        height: 50px;
+        font-size: 20px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .menu li.active a{
+        border: 0;
+        color: #B28756;
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+
+    .banner h2{
+        font-size: 17px;
+    }
+
+    .section-about-us{
+        flex-direction: column;
+    }
+
+    .section-about-us-left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section-about-us-left .button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-about-us-right{
+        width: auto;
+    }
+    .section-about-us-right img{
+        max-width: 90%;
+    }
+
+    .section-services{
+        flex-wrap: wrap;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .section-service,
+    .section-service:first-child{
+        min-width: 100%;
+        border: 0px;
+    }
+
+    .section-projects-filters{
+        margin-left: 30px;
+        margin-right: 30px;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-projects-filters ul,
+    .section-projects-filters li{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+
+    .section-projects-photo{
+        width: 320px;
+    }
+
+    .section-projects-photoarea{
+        width: 300px;
+        height: 190px;
+    }
+
+    .section-team{
+        max-width: 280px;
+    }
+
+    .section-happy-clients .section-desc p{
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .company{
+        display: flex;
+        justify-content: center;
+    }
+
+    .companies{
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    
+    .companies img{
+        margin-bottom: 50px;
+    }
+
+    .pricing-table{
+        flex-wrap: wrap;
+    }
+
+    .pricing-table .plans{
+        margin-bottom: 22px;
+        margin-left: 0;
+    }
+
+    .pricing-table .plans .button{
+        margin-top: 15px;
+    }
+
+    .pricing-table .content{
+        width: auto;
+        margin: 0;
+    }
+
+    .pricing-table .content li:first-child{
+        margin-top: 12px;
+    }
+
+    .section-premium .slide-area{
+        flex-direction: column;
+    }
+
+    .section-premium .slide-area .image{
+        display: flex;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .section-premium .slide-area .features{
+        margin-left: 30px;
+        margin-right: 30px;
+        justify-content: center;
+    }
+
+    .section-premium .content{
+        width: 250px;
+    }
+
+    .section-premium .feature img{
+        margin-left: 0px;
+    }
+
+    .section-facts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-facts .fact{
+        margin-bottom: 30px;
+    }
+
+    .social-share{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-share:first-child{
+        display: block;
+    }
+
+    .tell-about img{
+        display: none;
+    }
+    .tell-about{
+        font-size: 15px;
+        display: block;
+        margin: auto;
+    }
+
+    .social-share .links{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .social-media{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-media div{
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    
+    .fact{
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+    
+    .social-media{
+        flex-wrap: wrap;
+    }
+
+    .section-map{
+        padding: 0;
+        padding-bottom: 250px;
+    }
+
+    .section-map-area{
+        width: auto;
+    }
+
+    .section-map-info{
+        width: auto;
+    }
+
+    .section-map-info-item{
+        margin-bottom: 20px;
+    }
+
+    .section-map-info-item:last-child{
+        margin-bottom: 0;
     }
 
 }
