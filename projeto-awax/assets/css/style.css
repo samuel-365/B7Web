@@ -561,7 +561,8 @@ header{
     background-color: white;
     width: 300px;
     padding-bottom: 30px;
-    margin-left: 25px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 .plans .title{
     text-transform: uppercase;
@@ -683,7 +684,8 @@ header{
     align-items: center;
     width: 200px;
     text-align: center;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .num{
@@ -721,6 +723,8 @@ header{
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     justify-content: center;
     border-bottom: 3px solid rgba(153, 153, 153, 0.3);
 }
@@ -748,7 +752,13 @@ header{
 
 .social-media img{
     width: 35px;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.links,
+.social-media{
+    display: flex;
+
 }
 
 .section-contact-us{
@@ -920,6 +930,17 @@ footer .icon img{
 }
 
 
+@media(max-width:1300px){
+    .pricing-table{
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .plans{
+        margin-top: 25px;
+    }
+}
+
 @media(max-width:885px){
 
     .section-team{
@@ -1060,6 +1081,12 @@ footer .icon img{
 
     .social-share{
         display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .social-share .links{
+        display: flex;
     }
 
     .tell-about{
@@ -1071,7 +1098,8 @@ footer .icon img{
     }
 
     .social-media,
-    .tell-about{
+    .tell-about,
+    .links{
         flex: 1;
         margin: 0;
         padding: 0;
@@ -1084,7 +1112,11 @@ footer .icon img{
     }
     
     .social-media{
-        flex-wrap: wrap;
+        width: 75px;
+    }
+
+    .social-media img{
+        margin-right: 5px;
     }
 
     .section-map{
@@ -1113,6 +1145,22 @@ footer .icon img{
 
 
 @media(max-width:650px){
+
+    .social-share{
+        display: block;
+    }
+
+    .tell-about{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .tell-about div{
+        display: none;
+    }
+
     .section-contact-us{
         margin-left: 30px;
         margin: 30px;
@@ -1123,7 +1171,6 @@ footer .icon img{
 }
 
 @media(min-width:450px) and (max-width:590px){
-
 
     .section-about-us-right{
         width: auto;
