@@ -1,5 +1,14 @@
-let nome = 'Samuel Vidal da Silva';
+function mostrar(){
 
-let resultado = nome.substring(0, 6);
+    let reader = new FileReader();
+    let imagem = document.getElementById('imagem').files[0];
 
-console.log(resultado);
+    reader.onloadend = function(){
+        let img = document.createElement('img');
+        img.src = reader.result;
+        img.width = 200;
+
+        document.getElementById('area').appendChild(img);
+    }
+    reader.readAsDataURL(imagem);
+}
