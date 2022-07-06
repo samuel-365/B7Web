@@ -10,6 +10,32 @@ body{
     overflow-x: hidden;
 }
 
+.topButton{
+    border-radius: 30px;
+    display: flex;
+    z-index: 150;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #B28756;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+}
+@keyframes topframes{
+    0%{ padding-bottom: 0px;}
+    50%{ padding-bottom: 15px;}
+}
+
+a .topButton{
+    text-decoration: none;
+    color: white;
+    animation: topframes 2.5s infinite;
+}
+
 header{
     height: 100px;
     background-color: black;
@@ -961,12 +987,13 @@ footer .icon img{
         width: 45px;
         margin-right: 30px;
         cursor: pointer;
+        z-index: 99;
     }
 
     nav{
         display: none;
         position: absolute;
-        z-index: 99;
+        z-index: 98;
         background-color: rgba(0, 0, 0, 0.9);
         width: 70vw;
         height: calc(100vh - 100px);
@@ -999,11 +1026,6 @@ footer .icon img{
         margin-left: 30px;
         margin-right: 30px;
         margin-bottom: 30px;
-    }
-
-    .section-about-us-left .button{
-        display: flex;
-        justify-content: center;
     }
 
     .section-about-us-right{
